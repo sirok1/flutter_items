@@ -10,7 +10,7 @@ class GameItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () => Navigator.push(
-          context, MaterialPageRoute(builder: (ctx) => const GamePage())),
+          context, MaterialPageRoute(builder: (ctx) => GamePage(game: game,))),
       child: Column(
         children: [
           AspectRatio(
@@ -22,18 +22,20 @@ class GameItem extends StatelessWidget {
                     borderRadius: BorderRadius.circular(15)),
               )),
           Container(
-            alignment: Alignment.centerLeft,
-            padding: const EdgeInsets.fromLTRB(8, 5, 8, 0),
-            child: Text(
-              game.name,
-              style: const TextStyle(
-                  color: Colors.black87,
-                  fontWeight: FontWeight.w900,
-                  fontSize: 32),
-              textAlign: TextAlign.left,
-              softWrap: true,
-            ),
-          ),
+              alignment: Alignment.centerLeft,
+              padding: const EdgeInsets.fromLTRB(8, 5, 8, 0),
+              child: FittedBox(
+                fit: BoxFit.fitWidth,
+                child: Text(
+                  game.name,
+                  style: const TextStyle(
+                      color: Colors.black87,
+                      fontWeight: FontWeight.w900,
+                      fontSize: 20),
+                  textAlign: TextAlign.left,
+                  softWrap: false,
+                ),
+              )),
           Container(
             alignment: Alignment.centerLeft,
             padding: const EdgeInsets.fromLTRB(8, 1, 8, 5),
@@ -41,11 +43,12 @@ class GameItem extends StatelessWidget {
                 style: const TextStyle(
                     color: Colors.black54,
                     fontWeight: FontWeight.w900,
-                    fontSize: 22),
+                    fontSize: 18),
                 textAlign: TextAlign.left),
           ),
           ElevatedButton(
-              onPressed: () => {},
+              onPressed: () => {Navigator.push(
+          context, MaterialPageRoute(builder: (ctx) => GamePage(game: game,)))},
               style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.blueGrey,
                   shape: RoundedRectangleBorder(
