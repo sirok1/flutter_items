@@ -1,16 +1,7 @@
-# flutter_items
+Журавлёв Александр Михайлович
 
-A new Flutter project.
+ЭФБО-05-22
 
-## Getting Started
+![image](https://github.com/user-attachments/assets/c9f11c73-4c00-421a-b3d9-70029a93ad8b)
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![image](https://github.com/user-attachments/assets/dc1c8ac5-97b7-4e73-986b-41a994ec478d)
